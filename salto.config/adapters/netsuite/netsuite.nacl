@@ -1,0 +1,61 @@
+netsuite {
+  fetch = {
+    include = {
+      types = [
+        {
+          name = ".*"
+        },
+      ]
+      fileCabinet = [
+        "^/SuiteScripts.*",
+        "^/Templates.*",
+      ]
+    }
+    exclude = {
+      types = [
+        {
+          name = "workbook"
+        },
+        {
+          name = "dataset"
+        },
+        {
+          name = "customer"
+        },
+        {
+          name = "accountingPeriod"
+        },
+        {
+          name = "employee"
+        },
+        {
+          name = "job"
+        },
+        {
+          name = "manufacturingCostTemplate"
+        },
+        {
+          name = "partner"
+        },
+        {
+          name = "solution"
+        },
+        {
+          name = "giftCertificateItem"
+        },
+        {
+          name = "downloadItem"
+        },
+        {
+          name = "account"
+        },
+        {
+          name = "assemblyItem|lotNumberedAssemblyItem|serializedAssemblyItem|descriptionItem|discountItem|kitItem|markupItem|nonInventoryPurchaseItem|nonInventorySaleItem|nonInventoryResaleItem|otherChargeSaleItem|otherChargeResaleItem|otherChargePurchaseItem|paymentItem|serviceResaleItem|servicePurchaseItem|serviceSaleItem|subtotalItem|inventoryItem|lotNumberedInventoryItem|serializedInventoryItem|itemGroup"
+        },
+      ]
+      fileCabinet = [
+        "^/Templates/Letter Templates/Mail Merge Folder.*",
+      ]
+    }
+  }
+}
