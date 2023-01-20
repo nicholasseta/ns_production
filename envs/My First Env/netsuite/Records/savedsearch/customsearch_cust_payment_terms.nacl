@@ -1,0 +1,107 @@
+netsuite.savedsearch customsearch_cust_payment_terms {
+  scriptid = "customsearch_cust_payment_terms"
+  dependencies = {
+    dependency = [
+      netsuite.entitycustomfield.instance.custentity_is_partner.scriptid,
+      netsuite.entitycustomfield.instance.custentity_salesforceid.scriptid,
+      netsuite.customlist.instance.customlist_cust_is_partner.scriptid,
+    ]
+  }
+  definition = "13aba0cc4f2b8ade1f666bfb235a4f249b85fef09d1fd729ae4ab9a5702fa2ee@GZC@2022.2.13@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Entity_ISINACTIVE"
+      FIELD_ATTRIBUTE = "F"
+      FIELD_TYPE = "CHECKBOX"
+    },
+  ]
+  available_filters = [
+    {
+      SEQ_NUMBER = 1
+      FIELD_NAME = "Customer_TERMS"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Entity_ALTNAME"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_IS_PARTNER"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Customer_TERMS"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTENTITY_SALESFORCEID"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Entity_ENTITYID"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  audience = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch_cust_payment_terms"
+  FIELD_DEFAULT_NAME = "Customer Payment Terms"
+  FIELD_SEARCH_TYPE = "Customer"
+  FLAG_PUBLIC = true
+  FLAG_LIST = true
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "ANY"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = false
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

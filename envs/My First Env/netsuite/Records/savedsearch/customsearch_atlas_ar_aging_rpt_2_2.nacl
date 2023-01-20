@@ -1,0 +1,311 @@
+netsuite.savedsearch customsearch_atlas_ar_aging_rpt_2_2 {
+  scriptid = "customsearch_atlas_ar_aging_rpt_2_2"
+  dependencies = {
+    dependency = [
+      netsuite.transactionbodycustomfield.instance.custbody_note_create_user.scriptid,
+      netsuite.transactioncolumncustomfield.instance.custcol_ava_udf1.scriptid,
+    ]
+  }
+  definition = "027d645925d97c0dbde9cb4d5f75c15b812111f361f15f32851cfba18fa85a07@GZC@2022.2.13@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_ACCOUNT"
+      FIELD_ATTRIBUTE = "ANYOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "122"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_TYPE"
+      FIELD_ATTRIBUTE = "ANYOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "CustInvc"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_TRANDATE"
+      FIELD_MODIFIER = "WITHIN"
+      FIELD_ATTRIBUTE = "TY"
+      FIELD_TYPE = "DATE"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "2019-01-01 05:00:00.0 UTC"
+        },
+        {
+          KEY_ID = 1
+          FIELD_VALUE = "2019-12-31 05:00:00.0 UTC"
+        },
+      ]
+    },
+  ]
+  available_filters = [
+    {
+      SEQ_NUMBER = 1
+      FIELD_NAME = "Transaction_TRANDATE"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 2
+      FIELD_NAME = "Transaction_NAME"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "CUSTBODY_NOTE_CREATE_USER"
+      FIELD_INDEX = 1
+      FIELD_SUMMARY_TYPE = "GROUP"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_NAME"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "PY_Transaction_TYPE"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 4
+      FIELD_LABEL = "Current"
+      FIELD_SUMMARY_LABEL = "Current"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) &lt;1 then ({payingamount}) else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 5
+      FIELD_LABEL = "# of Current"
+      FIELD_SUMMARY_LABEL = "# of Current"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) &lt;1 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 6
+      FIELD_LABEL = "1-30 Days"
+      FIELD_SUMMARY_LABEL = "1-30 Days"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 1 AND 30 then ({payingamount}) else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 7
+      FIELD_LABEL = "Internal ID "
+      FIELD_SUMMARY_LABEL = "#  of 1-30 Days"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 1 AND 30 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 8
+      FIELD_LABEL = "31-60 Days"
+      FIELD_SUMMARY_LABEL = "31-60 Days"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 31 AND 60 then ({payingamount}) else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 9
+      FIELD_LABEL = "Internal ID "
+      FIELD_SUMMARY_LABEL = "# of 31-60 Days"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 31 AND 60 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 10
+      FIELD_LABEL = "61-90 Days"
+      FIELD_SUMMARY_LABEL = "61-90 Days"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 61 AND 90 then ({payingamount}) else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 11
+      FIELD_LABEL = "Internal ID "
+      FIELD_SUMMARY_LABEL = "# of 61-90 Days"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 61 AND 90 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 12
+      FIELD_LABEL = "91-120 Days"
+      FIELD_SUMMARY_LABEL = "91-120 Days"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 91 AND 120 then ({payingamount})  else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 13
+      FIELD_LABEL = "Internal ID "
+      FIELD_SUMMARY_LABEL = "# of 91-120 Days"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) BETWEEN 91 AND 120 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 14
+      FIELD_LABEL = "&gt; 120 Days"
+      FIELD_SUMMARY_LABEL = "&gt; 120 Days"
+      FIELD_SUMMARY_TYPE = "SUM"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) &gt;120 then ({payingamount}) else 0 end"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 15
+      FIELD_LABEL = "Internal ID "
+      FIELD_SUMMARY_LABEL = "# of &gt; 120 Days"
+      FIELD_SUMMARY_TYPE = "COUNT"
+      FIELD_FORMULA = "Case When ({payingtransaction.trandate}-{duedate}) &gt;120 then {payingtransaction.internalid} else NULL end"
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  detail_fields = [
+    {
+      FIELD_ALIAS = "Transaction_MAINLINE"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_TRANDATE"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_POSTINGPERIOD"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_TYPE"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_NUMBER"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_NAME"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_ACCOUNT"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_MEMO"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_AMOUNT"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "CUSTCOL_AVA_UDF1"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  audience = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch_atlas_ar_aging_rpt_2_2"
+  FIELD_DEFAULT_NAME = "A/R Aging - Payments VM"
+  FIELD_SEARCH_TYPE = "Transaction"
+  FLAG_PUBLIC = true
+  FLAG_LIST = false
+  FLAG_PORTLET = true
+  FLAG_MACHINE = true
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FIELD_CURRENCY_RATE_TYPE = "ACCTTYPE"
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = true
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}

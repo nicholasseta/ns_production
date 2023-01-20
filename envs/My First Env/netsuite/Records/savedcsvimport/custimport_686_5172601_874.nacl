@@ -1,0 +1,107 @@
+netsuite.savedcsvimport custimport_686_5172601_874 {
+  scriptid = "custimport_686_5172601_874"
+  charencoding = "windows-1252"
+  columndelimiter = "COMMA"
+  datahandling = "ADD"
+  decimaldelimiter = "PERIOD"
+  entryform = netsuite.entryForm.instance.custformis_project_form.scriptid
+  ignorereadonly = true
+  importname = "Dummy Project Creation"
+  logsystemnotescustfields = true
+  multiselectdelimiter = "|"
+  overwritemissingfields = false
+  overwritesublists = false
+  recordtype = "JOB"
+  runserversuitescript = false
+  usemultithread = false
+  validatemandatorycustfields = true
+  audience = {
+    allemployees = false
+    allpartners = false
+    allroles = false
+    globaledit = false
+    ispublic = false
+  }
+  filemappings = {
+    filemapping = {
+      JOB = {
+        file = "JOB"
+      }
+    }
+  }
+  recordmappings = {
+    recordmapping = {
+      JOB = {
+        record = "JOB"
+        fieldmappings = {
+          fieldmapping = {
+            COMPANYNAME = {
+              field = "COMPANYNAME"
+              columnreference = {
+                column = "Project Name"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            CURRENCY = {
+              field = "CURRENCY"
+              columnreference = {
+                column = "Currency"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            custentity_so_amount = {
+              field = netsuite.entitycustomfield.instance.custentity_so_amount.scriptid
+              columnreference = {
+                column = "SO Amount"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            custentity_so_currency = {
+              field = netsuite.entitycustomfield.instance.custentity_so_currency.scriptid
+              columnreference = {
+                column = "Currency"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            EXTERNALID = {
+              field = "EXTERNALID"
+              columnreference = {
+                column = "External ID"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            PARENT = {
+              field = "PARENT"
+              columnreference = {
+                column = "Cust Int ID"
+                file = "JOB"
+                type = "INTERNAL_ID"
+              }
+            }
+            STARTDATE = {
+              field = "STARTDATE"
+              columnreference = {
+                column = "Date"
+                file = "JOB"
+                type = "NAME"
+              }
+            }
+            SUBSIDIARY = {
+              field = "SUBSIDIARY"
+              columnreference = {
+                column = "Subsidiary Int ID"
+                file = "JOB"
+                type = "INTERNAL_ID"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

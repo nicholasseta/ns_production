@@ -1,0 +1,55 @@
+netsuite.usereventscript customscript_yp_ue_pdf {
+  scriptid = "customscript_yp_ue_pdf"
+  isinactive = false
+  name = "YP_CSV_UE_PDF.js"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_YP_CSV_UE_Pdf_js@duuuv.path
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploycustomdeploy_yp_ue_pdfcm = {
+        scriptid = "customdeploycustomdeploy_yp_ue_pdfcm"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "CSVIMPORT|ACTION|BUNDLEINSTALLATION|CLIENT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|MAPREDUCE|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKFLOW|BANKSTATEMENTPARSER|ADVANCEDREVREC|BANKCONNECTIVITY|PLATFORMEXTENSION|DATASETBUILDER|WORKBOOKBUILDER|FIPARSER|RECORDACTION|OCRPLUGIN"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "CREDITMEMO"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        
+      }
+      customdeploycustomdeploy_yp_ue_pdfinv = {
+        scriptid = "customdeploycustomdeploy_yp_ue_pdfinv"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "CSVIMPORT|ACTION|BUNDLEINSTALLATION|CLIENT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|MAPREDUCE|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKFLOW|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|PLATFORMEXTENSION|DATASETBUILDER|WORKBOOKBUILDER|FIPARSER|RECORDACTION|OCRPLUGIN"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "INVOICE"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        
+      }
+      customdeploycustomdeploy_yp_ue_pdfpmt = {
+        scriptid = "customdeploycustomdeploy_yp_ue_pdfpmt"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = true
+        executioncontext = "ACTION|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DEBUGGER|EMAILCAPTURE|MAPREDUCE|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTLET|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKFLOW|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|PLATFORMEXTENSION|DATASETBUILDER|WORKBOOKBUILDER|FIPARSER|RECORDACTION|OCRPLUGIN"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "CUSTOMERPAYMENT"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,664 @@
+netsuite.savedsearch customsearch1450 {
+  scriptid = "customsearch1450"
+  dependencies = {
+    dependency = [
+      netsuite.transactionbodycustomfield.instance.custbody_one_time_cost.scriptid,
+      netsuite.transactionbodycustomfield.instance.custbody_so_enduser.scriptid,
+      netsuite.transactionbodycustomfield.instance.custbody_vendor_bill_date.scriptid,
+      netsuite.transactioncolumncustomfield.instance.custcol_product_family.scriptid,
+      netsuite.customlist.instance.customlist_product_family_list.scriptid,
+      netsuite.othercustomfield.instance.custrecord_subsidiary_name.scriptid,
+    ]
+  }
+  definition = "c3ff088282edc501bc17bbc204f4c2afa6c5a1143e24563350e100e767c74d18@GZC@2022.2.13@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"
+  search_filter = [
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_POSTING"
+      FIELD_ATTRIBUTE = "T"
+      FIELD_TYPE = "CHECKBOX"
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_TRANDATE"
+      FIELD_MODIFIER = "WITHIN"
+      FIELD_ATTRIBUTE = "CUSTOM"
+      FIELD_TYPE = "DATE"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "2019-01-01 05:00:00.0 UTC"
+        },
+        {
+          KEY_ID = 1
+          FIELD_VALUE = "2020-11-30 05:00:00.0 UTC"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_TYPE"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "@ALL@"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_CREATEDBY"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "@ALL@"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "SU_CUSTRECORD_SUBSIDIARY_NAME"
+      FIELD_ATTRIBUTE = "ANYOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "53"
+        },
+        {
+          KEY_ID = 1
+          FIELD_VALUE = "48"
+        },
+        {
+          KEY_ID = 2
+          FIELD_VALUE = "26"
+        },
+        {
+          KEY_ID = 3
+          FIELD_VALUE = "35"
+        },
+        {
+          KEY_ID = 4
+          FIELD_VALUE = "34"
+        },
+        {
+          KEY_ID = 5
+          FIELD_VALUE = "36"
+        },
+        {
+          KEY_ID = 6
+          FIELD_VALUE = "37"
+        },
+        {
+          KEY_ID = 7
+          FIELD_VALUE = "25"
+        },
+        {
+          KEY_ID = 8
+          FIELD_VALUE = "24"
+        },
+        {
+          KEY_ID = 9
+          FIELD_VALUE = "23"
+        },
+        {
+          KEY_ID = 10
+          FIELD_VALUE = "9"
+        },
+        {
+          KEY_ID = 11
+          FIELD_VALUE = "38"
+        },
+        {
+          KEY_ID = 12
+          FIELD_VALUE = "71"
+        },
+        {
+          KEY_ID = 13
+          FIELD_VALUE = "19"
+        },
+        {
+          KEY_ID = 14
+          FIELD_VALUE = "22"
+        },
+        {
+          KEY_ID = 15
+          FIELD_VALUE = "17"
+        },
+        {
+          KEY_ID = 16
+          FIELD_VALUE = "20"
+        },
+        {
+          KEY_ID = 17
+          FIELD_VALUE = "21"
+        },
+        {
+          KEY_ID = 18
+          FIELD_VALUE = "18"
+        },
+        {
+          KEY_ID = 19
+          FIELD_VALUE = "3"
+        },
+        {
+          KEY_ID = 20
+          FIELD_VALUE = "2"
+        },
+        {
+          KEY_ID = 21
+          FIELD_VALUE = "1"
+        },
+        {
+          KEY_ID = 22
+          FIELD_VALUE = "14"
+        },
+        {
+          KEY_ID = 23
+          FIELD_VALUE = "4"
+        },
+        {
+          KEY_ID = 24
+          FIELD_VALUE = "15"
+        },
+        {
+          KEY_ID = 25
+          FIELD_VALUE = "5"
+        },
+        {
+          KEY_ID = 26
+          FIELD_VALUE = "13"
+        },
+        {
+          KEY_ID = 27
+          FIELD_VALUE = "7"
+        },
+        {
+          KEY_ID = 28
+          FIELD_VALUE = "11"
+        },
+        {
+          KEY_ID = 29
+          FIELD_VALUE = "6"
+        },
+        {
+          KEY_ID = 30
+          FIELD_VALUE = "10"
+        },
+        {
+          KEY_ID = 31
+          FIELD_VALUE = "12"
+        },
+        {
+          KEY_ID = 32
+          FIELD_VALUE = "16"
+        },
+        {
+          KEY_ID = 33
+          FIELD_VALUE = "29"
+        },
+        {
+          KEY_ID = 34
+          FIELD_VALUE = "31"
+        },
+        {
+          KEY_ID = 35
+          FIELD_VALUE = "28"
+        },
+        {
+          KEY_ID = 36
+          FIELD_VALUE = "30"
+        },
+        {
+          KEY_ID = 37
+          FIELD_VALUE = "32"
+        },
+        {
+          KEY_ID = 38
+          FIELD_VALUE = "41"
+        },
+        {
+          KEY_ID = 39
+          FIELD_VALUE = "56"
+        },
+        {
+          KEY_ID = 40
+          FIELD_VALUE = "47"
+        },
+        {
+          KEY_ID = 41
+          FIELD_VALUE = "44"
+        },
+        {
+          KEY_ID = 42
+          FIELD_VALUE = "63"
+        },
+        {
+          KEY_ID = 43
+          FIELD_VALUE = "64"
+        },
+        {
+          KEY_ID = 44
+          FIELD_VALUE = "43"
+        },
+        {
+          KEY_ID = 45
+          FIELD_VALUE = "59"
+        },
+        {
+          KEY_ID = 46
+          FIELD_VALUE = "61"
+        },
+        {
+          KEY_ID = 47
+          FIELD_VALUE = "60"
+        },
+        {
+          KEY_ID = 48
+          FIELD_VALUE = "49"
+        },
+        {
+          KEY_ID = 49
+          FIELD_VALUE = "65"
+        },
+        {
+          KEY_ID = 50
+          FIELD_VALUE = "42"
+        },
+        {
+          KEY_ID = 51
+          FIELD_VALUE = "57"
+        },
+        {
+          KEY_ID = 52
+          FIELD_VALUE = "62"
+        },
+        {
+          KEY_ID = 53
+          FIELD_VALUE = "58"
+        },
+        {
+          KEY_ID = 54
+          FIELD_VALUE = "40"
+        },
+        {
+          KEY_ID = 55
+          FIELD_VALUE = "52"
+        },
+        {
+          KEY_ID = 56
+          FIELD_VALUE = "45"
+        },
+        {
+          KEY_ID = 57
+          FIELD_VALUE = "46"
+        },
+        {
+          KEY_ID = 58
+          FIELD_VALUE = "55"
+        },
+        {
+          KEY_ID = 59
+          FIELD_VALUE = "66"
+        },
+        {
+          KEY_ID = 60
+          FIELD_VALUE = "50"
+        },
+        {
+          KEY_ID = 61
+          FIELD_VALUE = "67"
+        },
+        {
+          KEY_ID = 62
+          FIELD_VALUE = "27"
+        },
+        {
+          KEY_ID = 63
+          FIELD_VALUE = "39"
+        },
+        {
+          KEY_ID = 64
+          FIELD_VALUE = "8"
+        },
+        {
+          KEY_ID = 65
+          FIELD_VALUE = "54"
+        },
+        {
+          KEY_ID = 66
+          FIELD_VALUE = "51"
+        },
+        {
+          KEY_ID = 67
+          FIELD_VALUE = "68"
+        },
+        {
+          KEY_ID = 68
+          FIELD_VALUE = "69"
+        },
+        {
+          KEY_ID = 69
+          FIELD_VALUE = "70"
+        },
+        {
+          KEY_ID = 70
+          FIELD_VALUE = "33"
+        },
+      ]
+    },
+    {
+      FLAG_DATE_TIME_SECOND = false
+      FLAG_FROM_AVAILABLE_FILTER = false
+      FLAG_NOT = false
+      FLAG_OR = false
+      FIELD_OR_CLAUSE_STATUS = "N"
+      FIELD_NUM_LEFT_PARENS = 0
+      FIELD_NUM_RIGHT_PARENS = 0
+      FIELD_FILTER_NAME = "Transaction_ACCOUNT"
+      FIELD_ATTRIBUTE = "ANYOF"
+      FIELD_TYPE = "SELECT"
+      RECORDS = [
+        {
+          KEY_ID = 0
+          FIELD_VALUE = "682"
+        },
+        {
+          KEY_ID = 1
+          FIELD_VALUE = "686"
+        },
+        {
+          KEY_ID = 2
+          FIELD_VALUE = "690"
+        },
+        {
+          KEY_ID = 3
+          FIELD_VALUE = "696"
+        },
+        {
+          KEY_ID = 4
+          FIELD_VALUE = "1890"
+        },
+      ]
+    },
+  ]
+  available_filters = [
+    {
+      SEQ_NUMBER = 1
+      FIELD_NAME = "AP_AccountingPeriod_STARTDATE"
+      FIELD_CUSTOM_LABEL = "Date"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 2
+      FIELD_NAME = "Transaction_ACCOUNT"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 3
+      FIELD_NAME = "Transaction_TYPE"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 4
+      FIELD_NAME = "SU_CUSTRECORD_SUBSIDIARY_NAME"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 5
+      FIELD_NAME = "Transaction_NAME"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+    {
+      SEQ_NUMBER = 6
+      FIELD_NAME = "Transaction_CREATEDBY"
+      FLAG_FOOTER = true
+      FLAG_FOOTER_MULTI_SELECT = false
+    },
+  ]
+  return_fields = [
+    {
+      FIELD_ALIAS = "Transaction_ACCOUNT"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_DEPARTMENT"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_TRANDATE"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_POSTINGPERIOD"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_TYPE"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_NUMBER"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 7
+      FIELD_LABEL = "Name"
+      FIELD_FORMULA = "nvl({mainname},{name})"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULACURRENCY"
+      FIELD_INDEX = 8
+      FIELD_LABEL = "Tran Amount"
+      FIELD_FORMULA = "{fxamount}"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_CURRENCY"
+      FIELD_INDEX = 9
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_FORMULATEXT"
+      FIELD_INDEX = 10
+      FIELD_LABEL = "Memo"
+      FIELD_FORMULA = "{memo}"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_STATUS"
+      FIELD_INDEX = 11
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_SUBSIDIARYNOHIERARCHY"
+      FIELD_INDEX = 12
+      FIELD_LABEL = "Subsidiary"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_EXTERNALID"
+      FIELD_INDEX = 13
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_AMOUNT"
+      FIELD_INDEX = 14
+      FIELD_LABEL = "USD"
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTBODY_SO_ENDUSER"
+      FIELD_INDEX = 15
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_CREATEDBY"
+      FIELD_INDEX = 16
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_DATECREATED"
+      FIELD_INDEX = 17
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_PARTNER"
+      FIELD_INDEX = 18
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTBODY_VENDOR_BILL_DATE"
+      FIELD_INDEX = 19
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_MEMO"
+      FIELD_INDEX = 20
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_MEMOMAIN"
+      FIELD_INDEX = 21
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTCOL_PRODUCT_FAMILY"
+      FIELD_INDEX = 22
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_LOCATION"
+      FIELD_INDEX = 23
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_INTERNALID"
+      FIELD_INDEX = 24
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_ITEM"
+      FIELD_INDEX = 25
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Transaction_CREATEDFROM"
+      FIELD_INDEX = 26
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "CUSTBODY_ONE_TIME_COST"
+      FIELD_INDEX = 27
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Transaction_INTERNALID"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = true
+    },
+    {
+      KEY_FIELD = "Transaction_TRANDATE"
+      FILELD_ORDER = 2
+      FLAG_DESCENDING = true
+    },
+    {
+      KEY_FIELD = "Transaction_NAME"
+      FILELD_ORDER = 3
+      FLAG_DESCENDING = false
+    },
+  ]
+  audience = {
+    FLAG_AUDIENCE_ALL_CUSTOMERS = false
+    FLAG_AUDIENCE_ALL_EMPLOYEES = false
+    FLAG_AUDIENCE_ALL_PARTNERS = false
+    FLAG_AUDIENCE_ALL_ROLES = true
+    FLAG_AUDIENCE_ALL_VENDORS = false
+  }
+  KEY_SCRIPT_ID = "customsearch1450"
+  FIELD_DEFAULT_NAME = "Account Details by GL Account - PCK2"
+  FIELD_SEARCH_TYPE = "Transaction"
+  FLAG_PUBLIC = true
+  FLAG_LIST = true
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = true
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FIELD_CURRENCY_RATE_TYPE = "ACCTTYPE"
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "ANY"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = false
+  FLAG_HAS_TOTALS = true
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+}
